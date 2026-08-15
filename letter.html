@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Letter</title>
+    <link rel="stylesheet" href="Lstyle.css" />
+  </head>
+  <body>
+
+    <button class="back-button" aria-label="back home">←</button>
+
+    <div class="container">
+      <div class="wrapper" id="letterWrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>Dear, Baobei</strong>
+              <p>
+                HAPPY BIRTHDAY MY HANDSOME BAOBEI!❤️
+                <br>
+                <br> I made this letter to show you how grateful I am that you were born into this world. Time may flies past but know that in every second of our life I will always be by your side. I may not be at your side to celebrate with you but I promise that I will do my best to make every birthday celebration you'll have feel like I am with you.
+                <br> 
+                <br> I appreciate and love everything about you, your smile that is like a magic that lightens up my day, your eyes that sparkles the most in the ocean of stars, your handsome face that is always mesmerizing me. Everything about you that cant be put into words because of how much amazing you are.
+                <br>
+                <br> You give me so much joy everytime we are together and I thank you for that. I am very lucky for having you. 
+                <br> Thank you for always being kind, understanding, and being in my life. I thank your parents for taking care of you and raising you to be a good person. 
+                <br> 
+                <br> You're the best thing that ever happened to my life. I want us to spend all the next years together and I will keep loving you throughout those years.  
+                <br> I love you so much and even if we grow older and change I will still love that new version of you, I will love every version of you. 
+                <br>
+                <br> I love you so so so much sayangku❤️
+                <br>
+                <br> Sincerely yours, Lhiareign, your wife
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="stamp"></div>
+      </div>
+    </div>
+
+    <script>
+      const wrapper = document.getElementById('letterWrapper');
+      const backButton = document.querySelector('.back-button');
+
+      if (backButton) {
+        backButton.addEventListener('click', function () {
+          window.location.href = 'main.html';
+        });
+      }
+
+      if (wrapper) {
+        wrapper.addEventListener('click', function () {
+          wrapper.classList.toggle('flap');
+        });
+      }
+    </script>
+  </body>
+</html>
